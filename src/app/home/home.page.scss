@@ -1,6 +1,5 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
@@ -24,4 +23,19 @@
 
 #container a {
   text-decoration: none;
+}
+
+.auth-form{
+   text-align: center;
+}
+
+hr{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+#center-row{
+  margin-top: 50%;
 }

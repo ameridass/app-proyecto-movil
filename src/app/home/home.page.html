@@ -8,17 +8,13 @@
 
 <ion-content class="auth-form">
   <ion-grid>
-    <ion-row>
+    <ion-row id="center-row">
       <ion-col align-self-center>
-        <ion-button  expand="block" color="primary">Register</ion-button>
-        <ion-item-divider>
-          <span class="divider line one-line">or</span>
-        </ion-item-divider>
-        
-
-        <span class="already">Already a user?</span>
-
-        <ion-button expand="block" color="danger">Sign In</ion-button>
+        <ion-button  expand="block" color="primary">Registrarse</ion-button>
+        <span>o</span>
+        <hr>
+        <span>Ya eres usuario?</span>
+        <ion-button expand="block" color="danger" (click)="goToLogin()">Iniciar sesion</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
