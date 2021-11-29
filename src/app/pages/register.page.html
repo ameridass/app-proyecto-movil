@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="myFormGroupControls">
+    <ion-item lines="full">
+      <ion-label position="floating">Nombres</ion-label>
+      <ion-input type="text" formControlName="nombres" ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Apellidos</ion-label>
+      <ion-input type="text" formControlName="apellidos"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Alias</ion-label>
+      <ion-input type="text" formControlName="alias"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block" (click)="createNewUser();" [disabled]="myFormGroupControls.invalid">Registrarse</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
